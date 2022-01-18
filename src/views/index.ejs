@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Meeting Online</title>
+  </head>
+  <body>
+    <%-include('menu')%>
+    <h1>Hello <%=username%> </h1>
+    <% customers.map((c)=>{%>
+      <p><%=c.cust_name%></p>
+    <%})
+    %>
+  </body>
+</html>
